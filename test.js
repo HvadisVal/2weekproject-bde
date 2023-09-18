@@ -21,7 +21,7 @@ test("Mark as done", async t => {
     .expect(Selector("ul.todo-list li.completed").count).eql(0);
  
     // Arrange: Create a new task.
-    const newTaskName = "Walk the dog"; // Replace with your desired task name.
+    const newTaskName = "Walk the cat"; // Replace with your desired task name.
     await t
         .typeText(Selector(".new-todo"), newTaskName)
         .pressKey("enter");
